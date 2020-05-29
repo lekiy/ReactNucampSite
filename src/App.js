@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Navbar, NavbarBrand} from 'reactstrap';
-import logo from './logo.svg';
 import './App.css';
+import Directory from './Components/DirectoryComponent';
 
 class App extends Component {
   render(){
@@ -10,6 +10,7 @@ class App extends Component {
         <Navbar darl color="primary">
           <div className="container">
             <NavbarBrand href="/">Nucamp</NavbarBrand>
+            <Directory />
           </div>
         </Navbar>
       </div>
