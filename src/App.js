@@ -5,7 +5,6 @@ import Directory from './Components/DirectoryComponent';
 import {CAMPSITES} from './shared/Campsites';
 
 class App extends Component {
-
   
   constructor(props){
     super(props);
@@ -16,12 +15,12 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-        <Navbar darl color="primary">
+        <Navbar dark color="primary">
           <div className="container">
-            <NavbarBrand href="/">Nucamp</NavbarBrand>
-            <Directory campsites={this.state.campsites} />
+            <NavbarBrand href="#">Nucamp</NavbarBrand>
           </div>
         </Navbar>
+        <Directory campsites={this.state.campsites} />
       </div>
     )
   }
