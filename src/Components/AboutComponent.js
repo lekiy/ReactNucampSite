@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 
 function RenderPartner({partner}) {
+    const {image, name = ''} = partner;
     if(partner){      
         return(
             <React.Fragment>
