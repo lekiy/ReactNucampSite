@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { Breadcrumb, BreadcrumbItem, Button, Label, Col, Row} from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { Control, Form, Errors, LocalForm} from 'react-redux-form';
+import { Fade } from 'react-animation-components';
 
 const required = val => val && val.length;
 const maxLength = len => val => !val || (val.length <= len);
@@ -106,6 +107,7 @@ class Contact extends Component {
                     </div>
                 </div>
 
+                <Fade in>
                 <div className="row row-content align-items-center">
                     <div className="col-sm-4">
                         <h5>Our Address</h5>
@@ -120,6 +122,7 @@ class Contact extends Component {
                         <a role="button" className="btn btn-link" href="mailto:fakeemail@fakeemail.co"><i className="fa fa-envelope-o"></i> campsites@nucamp.co</a>
                     </div>
                 </div>
+                </Fade>
                 <div className="row row-content">
                     <div className="col-12">
                         <h2>Send us your Feedback</h2>
