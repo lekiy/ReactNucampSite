@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This uses an older version of node which may require using setting "NODE_OPTIONS=--openssl-legacy-provider" before running a command.
+
 ## Available Scripts
 
 In the project directory, you can run:
